@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <form name="formulario" id="formulario_cadastro" action="salvar.jsp" method="post">
+        <label>Nome</label> <input type="text" name="nome" size="40" maxlength="150">
+        <br>
+        <label>Endereço</label> <input type="text" name="endereço" size="40" maxlength="150">
+        <br>
+        <label>CPF</label> <input type="text" name="CPF" size="40" maxlength="14">
+        <br>
+        <label>Telefone</label> <input type="tel" name="tel" size="20" maxlength="20">
+        <br>
+        <label>E-mail</label> <input type="email" name="email" size="40" maxlength="150">
+        <br>
+        sexo
+        <input type="radio" name="sexoM" name="sexo"  value="M"> <label>Masculino</label>
+        <input type="radio" name="sexoF" name="sexo"  value="F"> <label>Feminino</label>
+        <label>Estado</label> <select name="estado" id="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AM">Amazonas</option>
+            <option value="AP">Amapá</option>
+        </select>
+    <input type="submit" value="Salvar" name="enviar">
+    </form>
+</body>
+</html>
